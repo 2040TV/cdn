@@ -1,0 +1,42 @@
+<style>
+.Bg_Th{
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+width:100%;
+background-color:#fff;
+transition: all .3s;
+z-index:9999;
+}
+.Bg_Img > img{
+display:block;
+position:absolute;
+transform:translate(-50%,-50%);
+top:45%;
+left:50%;
+border-radius:8px;
+box-shadow:0px 4px 8px 0px rgba(0,0,0,0.3);
+}
+.Bg_Text{
+position:relative;
+top:60%;
+text-align:center;
+font-size:1.4rem;
+letter-spacing:3px;
+z-index:9999;
+}
+</style>
+<div class="Bg_Th">
+<div class="Bg_Img"> <img src="https://cdn.jsdelivr.net/gh/LWANGYONG/cdn/img/luoxiaohei-load.gif"> </div>
+<p class="Bg_Text">少女祈祷中...</p>
+</div>
+<script>
+document.onreadystatechange = function() 　　//当页面加载状态改变的时候执行function
+{ 
+　　 if(document.readyState == "complete"){
+             var df = document.getElementsByClassName("Bg_Th")[0];
+             df.style.display="none";
+   　 }
+}
+</script>
